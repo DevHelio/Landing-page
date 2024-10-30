@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono';
+
+    /* For safari webkit */
+    color: #000;
+}
+
+body {
+    width: 100%;
+    height: 100svh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body:has(.mobileContainer) {
+    touch-action: none;
+}
+
+
+.brutalShadow {
+    border:2px solid black;
+    box-shadow: 2px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.buttonBrutalShadow {
+    box-shadow: 4px 6px 0 2px #000, 0 0 0 2px #000;
+}
+.brutalShadow:hover {
+    box-shadow: 6px 9px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 1px 1px 0 #000;
+}
+.brutalShadowHard {
+    box-shadow: 6px 9px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 1px 1px 0 #000;
+}
+.appContainer {
+    width: 90%;
+    height: 90%;
+}
+
+/* Here also goes the mobile pages css */
+.mobileContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+.currentContainer {
+    height: 85%;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.columnContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+
+    align-items: center;
+}
+
+#pageTitle {
+    font-size: 1.8rem;
+    font-weight: 900;
+
+    padding: 5% 0 6% 0;
+    text-align: center;
+}
+
+.itemList {
+    position: relative;
+    
+    width: 85%;
+    height: 100%;
+
+    touch-action: unset !important;
+}
+.itemList * {
+    touch-action: unset !important;
+}
+.itemList .listButton, .itemList .addNewButton {
+    background-color: #B8FF9F;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    padding: 0.2rem;
+
+    margin: 0 0 1.25rem 0;
+}
+.itemList .listButton .iconContainer, .itemList div .iconContainer {
+    width: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemList .listButton .uitjeInfoContainer, .itemList div .uitjeInfoContainer {
+    display: block;
+
+    width: 80%;
+    max-width: 80%;
+    min-width: 0;
+
+    text-align: left;
+}
+.itemList .listButton span h4, .itemList div span h4 {
+    font-family: 'Inter';
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.itemList .listButton span p, .itemList div span p {
+    font-family: 'Inter';
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.itemList .img1b1 {
+    margin: 0.2rem 0.4rem 0.2rem 0.2rem;
+}
+
+.img1b1 {
+    height: 100%;
+    aspect-ratio: 1/1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1b1 img {
+    width: 100%;
+    height: 100%;
+}
+.addNewUitjeButton {
+    background-color: #FFE500 !important;
+}
+.addNewButton button {
+    border: none;
+    background-color: #FFE500 !important;
+    border: 2px black solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.addNewButton input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    background: none;
+    font-size: 1rem;
+}
+
+.mobileMenu {
+    margin-top: 2.5%;
+    width: 85%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+.mobileMenu .menuLeft {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    
+    gap: 0.8rem;
+}
+.mobileMenu .menuLeft button {
+    width: 100%;
+    height: 80%;
+    aspect-ratio: 1/1;
+    
+    border: none;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 20px;
+    
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.mobileMenu .menuLeft button img {
+    width: 65%;
+    height: 65%;
+}
+
+.mobileMenu .menuRight {
+    justify-content: flex-end;
+}
+
+.mobileMenu .menuRight button {
+    background-color: #FFE500;
+}
+
+.settingsButton {
+    background-color: #FF8541;
+}
+.homeButton {
+    background-color: #FF7886;
+}
+.friendsButton {
+    background-color: #FFE500;
+}
