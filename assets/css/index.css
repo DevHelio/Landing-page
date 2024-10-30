@@ -358,6 +358,8 @@ body {
     justify-content: space-between;
 
     border: 2px solid #000;
+
+    margin-top: 2%;
 }
 .footerLogoContainerWrapper {
     flex: 1;
